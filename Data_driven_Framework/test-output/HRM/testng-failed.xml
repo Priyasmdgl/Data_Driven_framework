@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [HRM]">
+  <test name="Loginpage(failed)">
+    <classes>
+      <class name="HRM_Loginpage.Correct_U">
+        <methods>
+          <include name="correct_UsernameandIncorrect_Password"/>
+        </methods>
+      </class> <!-- HRM_Loginpage.Correct_U -->
+      <class name="HRM_Loginpage.Correct_UP">
+        <methods>
+          <include name="correct_UsernameandPassword"/>
+        </methods>
+      </class> <!-- HRM_Loginpage.Correct_UP -->
+      <class name="HRM_Loginpage.Incorrect_UP">
+        <methods>
+          <include name="incorrect_UsernameandPassword"/>
+        </methods>
+      </class> <!-- HRM_Loginpage.Incorrect_UP -->
+      <class name="HRM_Loginpage.Correct_P">
+        <methods>
+          <include name="incorrect_Usernameandcorrect_Password"/>
+        </methods>
+      </class> <!-- HRM_Loginpage.Correct_P -->
+    </classes>
+  </test> <!-- Loginpage(failed) -->
+</suite> <!-- Failed suite [HRM] -->

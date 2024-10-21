@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Loginpage" parallel="methods" thread-count="4">
+
+<test name="Login using dataproviders">
+<parameter name="username" value="student"></parameter>
+<parameter name="password" value="Password123"></parameter>
+<classes>
+<class name="Loginpage.Correct_UP"></class>
+</classes>
+</test>
+
+<test name="Login with incorrect username and password">
+<parameter name="username" value="Student"></parameter>
+<parameter name="password" value="Password@123"></parameter>
+<classes>
+<class name="Loginpage.Incorrect_UP"></class>
+</classes>
+</test>
+
+<test name="Login with correct username and incorrect password">
+<parameter name="username" value="student"></parameter>
+<parameter name="password" value="Password@123"></parameter>
+<classes>
+<class name="Loginpage.Correct_U"></class>
+</classes>
+</test>
+
+<test name="Login with incorrect username and correct password">
+<parameter name="username" value="Student"></parameter>
+<parameter name="password" value="Password123"></parameter>
+<classes>
+<class name="Loginpage.Correct_P"></class>
+</classes>
+</test>
+
+</suite>
